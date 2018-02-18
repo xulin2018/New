@@ -1,0 +1,119 @@
+/*重置样式*/
+body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 
+{ margin:0 ;padding:0; }
+body {font-size:12px; font-style:normal; font-family:"Microsoft Yahei";}
+m, b, i { font-style:normal;}
+
+/*开始了*/
+
+.module-header {
+    height: 50px;
+    border-top:2px solid #ef8768;   
+}
+
+.header {
+    width:1366px;
+    height: 48px;
+    background-color:#fde8cf;
+    margin:0 auto;
+    border-top:2px solid #ef8768;   
+}
+
+.hd-logo {
+    float: left;
+    position: relative;
+    width: 100px;
+    height: 28px;
+    padding:10px 30px;  
+   }
+
+.hd-logo .logo {
+    display: inline-block;
+    width: 80px;
+    height: 27px;
+    background-image:url(images/WB_logo.png);
+    cursor: pointer;
+    float: left;  
+}
+
+.hd-input {
+    float: left;
+    width: 470px;
+    position: relative;
+    padding:12px 2px; 
+}
+
+.hd-input .hot-search {
+    width: 422px;
+    height: 22px;
+    padding:2px 5px;
+    background: #f3f3f3; 
+    border: 1px solid #e5dbdb;
+}
+
+.in-put .hot-search:foucs {
+    background: #fff;
+    border:1px solid #f60;
+}
+
+.hd-input .search-icon {
+    display: inline-block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 20px;
+    right:40px;
+    background: url(images/icon-search.png) no-repeat;
+    cursor: pointer;   
+}
+
+.hd-input search-icon:hover {
+    color: #f60;
+}
+
+.hd-nav ul {
+    padding:15px 25px; 
+    margin-left:100px;
+    overflow: hidden;   
+}
+
+.hd-nav ul li {
+    list-style-type: none;
+    float:left;
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+.icon-home {
+    background: url("images/icon-home.png") no-repeat;  
+}
+.icon-video {
+    background: url("images/icon-video.png") no-repeat;  
+}
+.icon-compass {
+    background: url("images/icon-compass.png") no-repeat;  
+}
+.icon-game {
+    background: url("images/icon-game.png") no-repeat;  
+}
+.icon-user {
+    background: url("images/icon-user.png") no-repeat;  
+}
+
+.hd-nav ul li i {
+    display: inline-block;
+    width:22px;
+    height: 22px;
+    vertical-align: middle;}
+
+.hd-nav ul li a {
+    text-decoration: none;
+}
+
+.hd-nav ul li a: hover {
+    color: #306de0; 
+}
+
+
+
+

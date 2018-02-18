@@ -1,0 +1,304 @@
+/*重置样式*/
+body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 
+{ margin:0 ;padding:0; }
+body {font-size:12px; font-style:normal; font-family:"Microsoft Yahei";}
+m, b, i { font-style:normal;}
+
+li {list-style: none;}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*header*/
+.header {
+    position: relative;
+    background-color: #f9fbfd; 
+}
+
+.header-content {
+    height: 100px;
+    width: 1200px;
+    margin: 0 auto; 
+}
+
+.top-menu {
+    height: 50px;
+    float: right;
+}
+
+.top-menu-link>li {
+    float: left;
+    height: 20px;
+    padding: 0 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.top-menu-link a {
+    text-decoration: none; 
+    color: #757c75;
+}
+
+.top-menu-link a:hover {
+    color: #6872f0;
+}
+
+.top-menu .angle {
+  background: url(../static/images/2.png) no-repeat;
+  width: 16px;
+  height: 12px;
+  float: right;
+  margin-left:4px;
+  margin-top: 5px;
+  transition: transform .2s ease-in;
+  opacity: 0.5;
+}
+
+.menu-rss:hover .angle {
+  transform: rotate(180deg);
+  background: url(../static/images/1.png) no-repeat;
+}
+
+.menu-rss{
+  position: relative;
+}
+
+.menu-rss:hover .sub-menu-rss {
+  display: block;
+}
+
+.sub-menu-rss {
+  display: none;
+  position: absolute;
+  width: 110px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  height:25px;
+  line-height: 25px;
+}
+
+.sub-menu-rss a {
+  display: block;
+  padding-left: 10px;
+    color:#8b8585;  
+}
+
+.sub-menu-rss .rss-icon {
+  float: left;
+  margin: 7px 6px 0 0;
+  width: 14px;
+  height: 14px;
+  background: url(../static/images/wifi-rss.png) no-repeat;
+}
+
+.sub-menu-rss a:hover .rss-icon {
+  background: url(../static/images/wifi-rss.png) 0 -14px no-repeat;
+
+}
+
+.top-nav {
+    float: left;
+    height: 32px;
+    width: 1200px;
+}
+
+.top-nav>a {
+    float: left;
+} 
+
+ .logo-right {
+    float: left;
+    border-left: 2px solid #888882;
+    padding-left: 10px;
+    margin-left: 15px;
+    font-size: 12px;
+    color: #a09d9d;
+}
+
+.site-navbar {
+    float: right;
+}
+
+.site-navbar >li {
+    float: left;
+    font-size: 18px;
+    padding: 0 10px;
+    margin-right: 25px;
+    heigh:35px;
+    line-height: 35px;
+}
+
+.site-navbar > li >a {
+    text-decoration: none;
+    color:#636969;
+}
+
+.site-navbar > li > a:hover {
+    color: #45B6F7;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    width: 100px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6%;
+}
+
+.sub-menu >li:hover {
+    background-color: #f0e8e8;
+    color: #0f57f7; 
+}
+
+.sub-menu >li>a:hover {
+    color:#0f57f7; 
+}
+
+.sub-menu >li >a {
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.site-navbar > li:hover .sub-menu {
+    display: block;
+}
+
+.site-navbar > li:first-child a{
+  color: #45B6F7;
+}
+
+/*search*/
+.icon-search {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-top: 8px;
+    background: url(images/search1.png) no-repeat;
+    background-size: 18px 18px;
+}
+
+.icon-search:hover {
+    background: url(images/search2.png) no-repeat;
+    background-size: 18px 18px;
+}
+
+.search-case {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+
+.site-search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: -1;
+    background-color: #eff5fa;
+    opacity: 0.8;
+}
+
+/*点击搜索图标，搜索框出来，但是马上又消失了，而且每次点击位置总是变化*/
+
+
+
+.search-box {
+     text-align: center;
+}
+
+.module-content {
+    height: 60px;
+     width: 1200px;
+     margin: 0 auto; 
+}
+
+.site-search-form {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.site-search-input {
+    float: left;
+    width: 400px;
+    height: 50px;
+    color: #999;
+    padding-left: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border: 1px solid #f7ebeb;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.site-search-input:focus {
+    border-color:  #857cf2;
+}
+
+.site-search-btn {
+    width: 100px;
+    height: 50px;
+    background-color: #4589f5;
+    border-radius: 0 5px 5px 0;
+    border: none;
+}
+
+.site-search-btn:hover {
+    opacity: 0.85;
+}
+
+.icon-search-white {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top: 8px;
+    background: url(images/search-white.png) no-repeat;
+    background-size: 24px 24px;
+    cursor: pointer;
+}
+
+.search-show {
+    top: 110px;
+    z-index: 0;
+    transition: all ease 0.3s;
+}
+
+
+
+
+
+
+
+.body {
+    background-color: #ff78b6;
+    height: 800px;
+  
+}
+
+.footer {
+    background-color: #5ebced;
+    height: 300px;
+  
+}
+
+
+

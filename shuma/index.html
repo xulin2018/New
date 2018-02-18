@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>数码</title>
+    <link rel="stylesheet" href="css/shuma.css">
+    <script src="jquery.js"></script>
+    <script src="jquery.SuperSlide.js"></script>
+    <link href="image/icon.ico" rel="shortcut icon" />
+
+</head>
+<body>
+
+<!--top-->
+  <div class="top-warp">
+        <div class="top">
+                <div class="logo">
+                      <img src="image/logo.png" alt="">
+                </div>
+
+                <div class="nav">
+                        <ul>
+                            <li><a href="#">首页</a>
+                            </li>
+                            <li>
+                                <a href="#">关于我们</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">企业简介</a></li>
+                                    <li><a href="">企业文化</a></li>
+                                    <li><a href="">企业愿景</a></li>
+                                    <li><a href="">联系我们</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">新闻资讯</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">企业新闻</a></li>
+                                    <li><a href="">行业动态</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li><a href="#">产品展示</a></li>
+        
+                            <li>
+                                <a href="#">新闻资讯</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">企业新闻</a></li>
+                                    <li><a href="">企业新闻</a></li>
+                                    <li><a href="">行业动态</a></li>
+                                    <li><a href="">行业动态</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li><a href="#">联系我们</a></li>
+                            
+                        </ul>
+                </div>
+         </div>
+ </div>
+
+<!--banner-->
+  <div class="banner">
+        <div class="focusbox">
+            <ul class="hd">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            
+            <a class="prev" href="javascript:void(0)">&lt;</a>
+            <a class="next" href="javascript:void(0)">&gt;</a>
+
+            <div class="bd">
+                <a href="">
+                    <img src="image/banner.jpg" alt="" width="100%">
+                </a>
+                <a href="">
+                    <img src="image/banner-2.jpg" alt="" width="100%">
+                </a>
+                <a href="">
+                    <img src="image/banner-3.jpg" alt="" width="100%">
+                </a>
+            </div>
+
+            <script>
+                $(function () {
+                    $(".focusbox").slide({
+                        'titCell': ".hd li",
+                        'mainCell': ".bd",
+                        'trigger': 'click', //titCell触发方式 mouseover：鼠标移过触发； click：鼠标点击触发
+                        'autoPlay': 'true', //自动运行
+                        interTime: 2000, //自动运行间隔
+                        effect: 'left' //动画效果
+                    })
+                });
+            </script>
+        </div>
+  </div>
+
+<!--关于我们-->
+  <div class="indextab">
+        <div class="row clearfix">
+                <a href="">
+                    <i class="icon-1"></i>
+                    <h2>关于我们</h2>
+                    <p>全球范围内被信赖，受尊重的企业 这一目标的“全球优良企业集团构想”</p>
+                </a>
+
+                <a href="">
+                    <i class="icon-2"></i>
+                    <h2>关于我们</h2>
+                    <p>公司自2003年创业以来，始终以创造世界一流产品为奋斗目标</p>
+                </a>
+
+                <a href="">
+                    <i class="icon-3"></i>
+                    <h2>关于我们</h2>
+                    <p>公司自2003年创业以来，始终以创造世界一流产品为奋斗目标</p>
+                </a>
+
+                <a href="">
+                    <i class="icon-4"></i>
+                    <h2>关于我们</h2>
+                    <p>公司自2003年创业以来，始终以创造世界一流产品为奋斗目标</p>
+                </a>
+        </div>
+  </div>
+
+<!--推荐产品-->
+  <div class="product clearfix">
+        <h1>推荐产品</h1>
+        <div class="product-list">
+
+            <a href="">
+                <img src="image/product.jpg" alt="">
+                <p>kanen</p>
+            </a>
+
+            <a href="">
+                <img src="image/product.jpg" alt="">
+                <p>kanen</p>
+            </a>
+
+            <a href="">
+                <img src="image/product.jpg" alt="">
+                <p>kanen</p>
+            </a>
+
+            <a href="">
+                <img src="image/product.jpg" alt="">
+                <p>kanen</p>
+            </a>
+
+            <a href="">
+                <img src="image/product.jpg" alt="">
+                <p>kanen</p>
+            </a>
+
+            <a href="">
+                <img src="image/product.jpg" alt="">
+                <p>kanen</p>
+            </a>
+
+            <a href="">
+                <img src="image/product.jpg" alt="">
+                <p>kanen</p>
+            </a>
+
+            <a href="">
+                <img src="image/product.jpg" alt="">
+                <p>kanen</p>
+            </a>
+        </div>
+ </div>
+
+
+<!--常见问题-->
+  <div class="question clearfix">
+        <h1>常见问题</h1>
+        <div class="question-box">
+<!--            <img src="image/question-icon.png" alt="">-->
+            <i class="question-icon"></i>
+            <a href="">数码单镜反光照相机构造</a>
+            <p>数码照相机使用将光线转换为电子信号的影像感应器拍摄照片。单镜反光（SLR）照相机的不同之处在于由光学取景器显示通过照相机镜头的影像...</p>
+        </div>
+
+        <div class="question-box">
+<!--            <img src="image/question-icon.png" alt="">-->
+            <i class="question-icon"></i>
+            <a href="">数码单镜反光照相机构造</a>
+            <p>数码照相机使用将光线转换为电子信号的影像感应器拍摄照片。单镜反光（SLR）照相机的不同之处在于由光学取景器显示通过照相机镜头的影像...</p>
+        </div>
+
+        <div class="question-box">
+<!--            <img src="image/question-icon.png" alt="">-->
+            <i class="question-icon"></i>
+            <a href="">数码单镜反光照相机构造</a>
+            <p>数码照相机使用将光线转换为电子信号的影像感应器拍摄照片。单镜反光（SLR）照相机的不同之处在于由光学取景器显示通过照相机镜头的影像...</p>
+        </div>
+
+        <div class="question-box">
+<!--            <img src="image/question-icon.png" alt="">-->
+            <i class="question-icon"></i>
+            <a href="">数码单镜反光照相机构造</a>
+            <p>数码照相机使用将光线转换为电子信号的影像感应器拍摄照片。单镜反光（SLR）照相机的不同之处在于由光学取景器显示通过照相机镜头的影像...</p>
+        </div>
+  </div>
+
+
+<!-- 邮件     -->
+  <div class="email clearfix">
+        <div class="email-box">
+            <h1>邮寄地址</h1>
+      
+            <div class="email-word">
+                    <h4>公司自2003年创业以来，始终以创造世界一流产品为奋斗目标</h4>
+                    <ul>
+                        <li><i class="email-icon"></i><a href="">233128722789@qq.com</a></li>
+
+                        <li><i class="email-phone"></i>123456789</li>
+                    </ul>
+            </div>
+     
+            <div class="formbox">
+                <form action="">
+                    <div><input type="text" name="" class="form-control2" placeholder="姓名 "></div>
+                    <div><input type="text" name="" class="form-control2" placeholder="电话 "></div>
+                    
+                    
+                    <div class="textarea">
+                          <textarea name="" class="" placeholder="其他"></textarea>
+                    </div>
+
+                    <button type="submit" class="button">提交信息</button>
+                </form>
+            </div>
+        </div> 
+ </div>
+
+
+
+<!--底部-->
+  <div class="foot clearfix">
+        <div class="foot-box">
+               <div class="foot-word">
+                    <div class="foot-word1">
+                         <span class="foot-word1"><a href="">企业简介</a></span>
+                         <span class="foot-word1"><a href="">企业简介</a></span>
+                         <span class="foot-word1"><a href="">企业简介</a></span> 
+                    </div>
+
+                    <p class="foot-word2">友情链接： 
+                        <a href=""> 佳能官网</a>
+                        <a href=""> 尼康官网 </a>
+                        <a href="">天猫商城</a>
+                        <a href="">京东 商场</a>
+                        <a href="">亚马逊商城</a>
+                        <a href="">易讯商城</a>
+                        <a href="">卡西欧数码</a>
+                        <a href="">宾得数码</a>
+                        <a href="">1号商城</a>
+                        <a href="">当当商城</a>
+                        <a href="">中关村在线</a>
+                        <a href="">苏宁易购</a>
+                        <a href="">国美在线</a>           
+                    </p>
+                    <p>版权所有 2008-2012 湘ICP备8888888</p>
+            </div>
+
+    <!--
+               <div class="foot-icon">
+                   <a href=""><i class="foot-icon1"></i></a>
+                   <a href=""><i class="foot-icon2"></i></a>
+               </div>
+    -->
+
+               <div class="foot-icon">
+                   <a href=""><img src="image/weibo.png" alt=""></a>
+                   <a href=""><img src="image/wechat.png" alt=""></a>
+               </div>
+        </div>
+        <a class="top2" href="#top" target="_self">
+                    <img src="image/topicon.png" alt="">
+        </a>
+ </div>
+
+
+<!--
+1:banner和2个有背景图片的部分不能满屏显示，是因为top的2个div没有闭合标签,邮件部分H4也没有闭合标签
+2：图标学会用after定位，注意盒子模型，大多数表单的盒子模型是border-box
+3：导航部分，鼠标经过显示，移开不见了，是因为给二级菜单设置了顶部距离
+3：底部文字有链接的不能正常显示白色,是因为A标签有统一设置样式，要单独给底部的A标签再设置颜色
+4：表单部分：表单元素都需要包再form标签内，所有边框去掉，text框顺序往下排对不齐.因为input框自带空格.横排时有间隙是空格造成，一般给text框包一个div就可以了，
+-->
+
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+/*重置样式*/
+body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 
+{ margin:0 ;padding:0; }
+body {font-size:12px; font-style:normal; font-family:"Microsoft Yahei";}
+img{border:none;}
+li{list-style: none;}
+a{text-decoration: none;color:#333;}
+a:focus{outline-style: none;outline-width: 0;}
+a:link,a:visited,a:active{text-decoration: none;}
+a:hover{text-decoration: none;}
+.clearfix:before,.clearfix:after{content:"";display: table;}
+.clearfix:after{clear: both;}
+
+
+.header{
+    width:980px;
+    height:102px;
+    background-color: aqua;
+    float: left; 
+    position: relative;
+}
+
+.header p{
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 36px;
+    block:inline-block;
+}
+
+.header left{
+    position: absolute;
+    font-size: 25px;
+    line-height: 25px;
+    margin-left: 20px;
+    
+}
+
+.header right{
+    position: absolute;
+    margin-right: 25px;
+    
+}
+
+
+
+
+
+
+

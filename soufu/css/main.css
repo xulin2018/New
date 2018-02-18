@@ -1,0 +1,103 @@
+/*重置样式*/
+body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 
+{margin:0 ;padding:0; }
+body {font-size:14px; font-style:normal; font-family:"Microsoft Yahei";}
+p{line-height: :1.8m;}
+h1,h2,h3{line-height: 2;}
+em,b,i{font-style: normal;}
+
+a{text-decoration: none;color:#333;}
+a:focus{outline-style: none;outline-width: 0;}
+a:link,a:visited,a:active{text-decoration: none;}
+a:hover{text-decoration: none;}
+.clearfix:before,.clearfix:after{content:"";display: table;}
+a { text-decoration:none; color:#000;}
+a:hover { text-decoration:underline; color:#f50;}
+
+img { border:none;}
+li { list-style:none;}
+table { border-spacing:0; border-collapse:collapse;}
+
+/*清除浮动*/
+.clearfix { *zoom: 1;} 
+.clearfix:before, .clearfix:after { display: table; line-height: 0; content: "";}
+.clearfix:after { clear: both;}
+
+
+/*优酷*/
+.box{
+    width:200px;height: 112px;
+    background-image: url(img.jpg);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.zhezhao{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.5; 
+    display: none;
+} 
+
+.word{
+    position: absolute;
+    color: red;
+    margin-top: 20px;
+    margin-right: 20px;
+    display: none;
+}
+
+.box:hover .zhezhao{display:block;}
+.box:hover .word{display:block;}
+
+
+/*万老师公开课*/
+.ceshi ul li{
+    float:left;
+    position: relative;
+    transition: 0.5s; 
+    margin:0 10px;}
+/*transition: 0.5s动画时间 transform动画效果*/
+
+.ceshi img{
+    border-radius: 5px;
+    width:200px;height: 112px;
+}
+
+.ceshi span{
+    position: absolute;
+    bottom: 3px;
+    width:200px;height: 20px;
+    border-radius: 5px; 
+    background: rgba(0,0,0,0.5);
+    color:antiquewhite;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.ceshi ul li:hover{
+    transform:rotate(20deg);
+    transform:scaleY(1.5);
+}
+
+.ceshi ul li:hover span{
+    opacity: 0;
+}
+
+
+
+/*轩老师作业*/
+
+
+
+
+
+
+
+
+
+

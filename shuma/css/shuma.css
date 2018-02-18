@@ -1,0 +1,513 @@
+/*重置样式*/
+body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 
+{margin:0 ;padding:0; }
+body {font-size:14px; font-style:normal; font-family:"Microsoft Yahei";}
+p{line-height: :1.8m;}
+h1,h2,h3{line-height: 2;}
+h1{font-size: 35px;}
+em,b,i{font-style: normal;}
+
+a{text-decoration: none;color:#333;}
+
+.clearfix:before,.clearfix:after{content:"";display: table;}
+
+.clearfix:after {
+    clear: both;
+}
+
+a:hover { text-decoration:none; color:#286ff2;}
+
+img { border:none;}
+li { list-style:none;}
+
+/*通用代码*/
+/*
+.flt{float: left;}
+.frt{float: right;}
+.pos-ab{position: absolute;}
+.pos-re{position:relative;}
+*/
+
+/*清除浮动*/
+.clearfix { *zoom: 1;} 
+.clearfix:before, .clearfix:after { display: table; line-height: 0; content: "";}
+.clearfix:after { clear: both;}
+
+/*top*/
+.top-warp{
+    height: 50px;
+    margin-top: 5px;
+}
+
+.top{
+    width:1000px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.logo{ 
+    display: inline-block;
+    margin-top: 5px;
+    }
+
+.nav {
+    padding-top: 15px;
+    float:right;   
+}
+
+.nav > ul > li {
+    position: relative;
+    float: left;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    width: 100px;
+    font-weight:lighter;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px #ddd;
+    border-radius: 4px;
+    
+}
+
+.sub-menu li a {
+    display: block;
+    background: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0 10px 0 5px;
+    text-align: center;
+}
+
+.sub-menu li a:hover {
+    background: #e4e3f0;
+}
+
+
+.nav> ul > li:hover .sub-menu {
+    display: block;
+    z-index: 1;
+}
+
+/*
+定义单个样式
+.site-navbar > ul > li:first-child a{
+  color: #45B6F7;
+}
+*/
+
+/*banner*/
+.banner{
+    width: 1274px;
+    height: 415px;
+    margin-top: 10px;
+}
+
+.focusbox{
+    overflow:hidden;
+    position: relative;
+}
+
+.focusbox .hd{
+    position: absolute;
+    width:140px;height: 20px;
+    margin:auto;
+    left:0; right:0; bottom:10px;
+    z-index: 100;
+}
+
+.focusbox .hd li{
+    float: left;
+    width:15px; height:15px;
+    width:15px; height:15px;
+    border-radius:50%;
+    margin-left:5px;
+    
+    background-color: #000;
+    cursor: pointer;   
+}
+
+.focusbox .bd a{
+    display: block;
+    text-decoration: none;
+}
+
+.focusbox .hd .on{
+    background-color: #fff;
+}
+
+/*左右按钮*/
+.focusbox .prev{
+    width:25px; height: 60px;
+    font-size: 30px;
+    background-color: #8bb6fc;
+    color: aliceblue;
+    position: absolute;
+    z-index: 100;
+    display: block;
+    text-decoration: none;
+    line-height: 50px;
+    text-align: center;
+    margin:auto;
+    top:0; bottom:0; left: 5px;
+}
+
+.focusbox .next{
+    width:25px; height: 60px;
+    font-size: 30px;
+    background-color: #8bb6fc;
+    color: aliceblue;
+    position: absolute;
+    z-index: 100;
+    display: block;
+    text-decoration: none;
+    line-height: 50px;
+    text-align: center;
+    margin:auto;
+    top:0; bottom:0; right: 5px;
+}
+
+/*关于我们*/
+.indextab{
+    width:1000px;
+    height: 260px;
+    margin: 0 auto;
+}
+
+.indextab .row{
+    margin-left:15px;
+    margin-top: 30px;
+}
+
+.indextab a{
+    float:left;
+    width:200px;
+    height:230px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    z-index: 0;
+    margin-left:40px;
+    font-size: 14px;
+}
+
+.indextab i{
+    display: block;
+    width:102px;
+    height:101px;
+    margin:5px auto 25px auto;
+} 
+
+.indextab h2{
+    color:#5b9cf5;
+}
+
+.indextab .icon-1{
+    background: url(../image/icon.png) no-repeat;
+} 
+
+.indextab .icon-2{
+    background: url(../image/icon.png) -103px 0 no-repeat;
+}
+
+.indextab .icon-3{
+    background: url(../image/icon.png) -206px 0 no-repeat;
+}
+
+.indextab .icon-4{
+    background: url(../image/icon.png) -309px 0  no-repeat;
+}
+
+/*推荐产品*/
+.product{
+    height:810px;
+    width:1274px;
+/*    margin-left: -140px;*/
+    background-image: url(../image/product-bk-img-1.png) ;
+    background-repeat:repeat;
+}
+
+.product-list{
+    width:1100px;
+    height: 410px;
+    margin:0 auto;
+}
+
+.product h1{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.product a{
+     float:left;
+     margin-left: 15px;
+     margin-top: 20px;
+}
+
+.product p{
+    text-align: center;
+    font-size: 16px;
+}
+
+.product a img:hover{
+    opacity:0.6;
+}
+
+/*常见问题*/
+.question{
+    width:1000px;
+    height: 500px;
+    margin:0 auto;
+    margin-top: 60px;
+}
+
+.question h1{
+    text-align: center;
+    padding: 30px 0 20px 0; 
+}
+
+.question-box{
+    width:420px;
+    height: 130px;
+    background-color: #f2f2f2;
+    color:#7c7871;
+    border-bottom: 2px solid #1146f8;
+    padding:30px 15px 0 15px;
+    float:left;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.question-box a{
+    font-size: 18px;
+    line-height: 35px;
+    margin-right: 20px;
+}
+
+.question i{
+  position: relative;
+  padding-left:5px;
+  margin-right:30px;
+}
+
+.question i::before{
+  position: absolute;
+  top: 1px;
+  content: "";
+  width:20px;
+  height: 20px;
+}
+
+.question .question-icon::before{
+  background: url(../image/question-icon.png) no-repeat;
+  background-size: 18px 18px;
+}
+
+/*邮件*/
+.email{
+    height:530px;
+    width:1274px;
+    background-image: url(../image/email-bk-img.png) ;
+    background-repeat:repeat;
+}
+
+.email-box{
+    height:500px;
+    width:1000px;
+    margin:0 auto;
+    text-align: center;
+}
+
+.email h1{
+    color:#fff;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.email-word h4{
+    color:aliceblue; 
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.email-word ul{
+    line-height: 20px;
+}
+
+.email-word ul li{
+    font-size: 16px;
+    line-height: 25px;
+    color:#3b3b9b;
+}
+
+.email-word a {
+    font-size: 16px;
+    color:#3b3b9b;
+}
+
+.formbox{
+    height: 320px;
+    padding-top: 20px;
+    margin:0 auto;
+    text-align: center;
+    line-height: 20px;
+}
+
+.form-control2{
+    width:400px;
+    height: 25px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border:none;
+/*    默认盒子模型 box-sizing: content-box;*/
+}
+
+.formbox textarea{
+    width:400px;
+    height: 100px;
+    font-size: 14px;
+    margin-bottom: 25px;
+    border:none;
+/*    默认盒子模型box-sizing:content-box;*/
+}
+
+.formbox button{
+    width:200px;
+    height:50px;
+    background: #313564;
+    color:#fff;
+    font-size: 18px;
+    border:none;
+    cursor: pointer;
+/*    默认盒子模型box-sizing:border-box;*/
+}
+
+
+/*用before定位图片*/
+/*
+.email i{
+  position: relative;
+  padding-left:5px;
+  margin-right:30px;
+}
+
+.email i::before{
+  position: absolute;
+  top: 15px;
+  content: "";
+  width:20px;
+  height: 20px;
+}
+
+.email .email-icon::before{
+  background: url(../image/Mail.png) no-repeat;
+  background-size: 18px 18px;
+}
+
+.email .email-phone::before{
+  background:url(../image/phone.png) no-repeat;
+  background-size: 20px 20px;
+}
+*/
+
+.email-icon{
+    display: block;
+    width:18px;height: 18px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../image/Mail.png) no-repeat;
+    background-size: 18px 18px;
+}
+
+.email-phone{
+    display: block;
+    width:18px;height: 18px;
+    padding-left: 5px;
+     margin-bottom: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../image/phone.png) no-repeat;
+    background-size: 18px 18px;
+}
+
+
+/*底部*/
+.foot{
+    height:150px;
+    width:1274px;
+    margin:0 auto;
+    background-color: black; 
+}
+
+.foot-box{
+    width:1000px;
+    margin:0 auto;
+}
+
+.foot-word{
+    width:760px;
+    color:#c1b8b8;
+    font-size: 14px;
+    line-height: 35px;
+    padding-top: 10px;
+    float: left;  
+}
+
+.foot-word1 a{
+    margin-right:35px; 
+    color:#eae1e1;
+}
+
+.foot-word2 a{
+    margin-right:25px;
+    color:#eae1e1;
+}
+
+.foot-word a :hover{
+    text-decoration:underline;
+    color:#0f72e5;
+}
+
+.foot-icon{
+    width: 80px;
+    height:25px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.foot-icon a{
+   margin-left: 15px;
+   padding-top: 5px;
+}
+
+.foot-icon1{
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../image/weibo.png) no-repeat;
+    background-size: 20px 20px;
+}
+
+.foot-icon2{
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../image/wechat.png) no-repeat;
+    background-size: 20px 20px;
+}
+
+.top2{
+    display:inline-block;
+    float: right;
+    width:32px;
+    height:32px;
+    padding-top: 50px;
+    margin-right:70px;
+}
+

@@ -1,0 +1,489 @@
+/* 属性重置 */
+body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 { margin:0 ;padding:0; }
+body { background:#fff ; color:#000; font-size:12px; font-style:normal; font-family:"Microsoft Yahei"; }
+p{line-height:1.6;}
+h1,h2,h3{line-height:2;}
+em, b, i { font-style:normal;}
+img { border:none;}
+a { text-decoration:none; color:#000;}
+a:hover { text-decoration:underline; color:#cc0000;}
+li { list-style:none;}
+
+
+/*清除浮动*/
+    .clearfix { *zoom: 1;} 
+    .clearfix:before, .clearfix:after { display: table; line-height: 0; content: "";}
+    .clearfix:after { clear: both;}
+/*the end*/
+
+/*top*/
+.top {
+    height: 3px;
+    background-color: #e50808;
+}
+
+/*header*/
+.header {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 110px;
+    height: 80px;
+    float: left;
+    background: url(../css/image/logo.png);
+}
+
+.nav {
+    float: right;
+    padding-right: 20px;
+}
+
+.nav a {
+    float: left;
+    height: 80px;
+    line-height: 80px;
+    font-size: 16px;
+    margin: 0 10px;
+    padding:0 20px;
+}
+
+.nav a:hover {
+    color: #fcf8f8; 
+    background-color: #f70101;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*
+.nav a:nth-child(1) {
+    color: #e50808;
+    background-color: #6b70ea;
+}
+*/
+/*nth-child(1） 或者 first-child 单独设置第一个的样式  nth-child(3) 序号表示第几个的样式 */
+
+
+/*focusbox*/
+.focusbox {
+    height: 410px; 
+    position: relative;
+    overflow: hidden;
+}
+
+.focusbox a {
+/*    position: relative; */
+    display: block;
+    height: 410px;
+}
+
+/*
+.focusbox a * {
+    position: absolute;
+}                         a里面的所有元素position都是absolute
+*/
+
+.focusbox h2 {
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    height: 40px;
+    width: 100%; 
+    margin: auto;
+    top: 180px;
+    color: #f6f5fc;
+    position: absolute;
+}
+/*第1种方法： 绝对定位下的水平垂直居中：父元素relative; 子元素absolute; 设置宽高，margin: auto; left: 0; right: 0; top: 0; bottom: 0; 
+    
+    第2种方法先拉伸，再居中：利用position：absolute时的拉伸性，和text-align对inline-block元素起作用
+    
+    相当于一般状态下div默认宽度为100%；position：absolute; left: 0; right: 0; 子元素如果是inline-block，那text-align:center是起作用的
+    */ 
+
+/*
+.focusbox .hd {
+    height: 20px;
+    margin:auto;
+    left: 0;
+    right: 0;
+    bottom: 100px; 
+    z-index: 100;
+    text-align: center;
+    position: absolute; 
+}
+*/
+
+.focusbox .hd {
+    left: 0;
+    right: 0;
+    bottom: 20px; 
+    text-align: center;
+    position: absolute; 
+}
+
+.focusbox .hd li {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 12px;
+}
+/*text-align: center只对文本起作用，把li display改成inline-block既可以起到居中的效果*/
+
+.focusbox .hd li:hover {
+    background-color: #fd0606;
+}
+
+.focusbox .hd .on {
+    background-color: #f5fafc;
+}
+
+.focusboxBtn a {
+    font-size: 40px;
+    top: 150px;
+    float: left; 
+    text-decoration: none;
+    height: 60px;
+    width: 40px;
+    background-color: #f80808;
+    color:#eff7f7;
+}
+
+.focusboxBtn .prev, .focusboxBtn .next{
+    position: absolute;
+} 
+
+.focusboxBtn .next {
+    right: 0;
+} 
+
+/*service*/
+.service {
+     width: 1000px;
+     height: 400px;
+     margin: 0 auto;
+     margin-top: 30px;
+}
+
+.serviceTitle {
+    text-align: center;
+}
+
+.serviceTitle h2 {
+    color: #f01717;
+    z-index: 10;
+}
+
+.serviceList a {
+    width: 450px;
+    height: 100px;
+    float:left;
+    padding: 20px 20px;
+    margin-left: 20px 10px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.serviceList i {
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    float: left;
+    margin-right: 15px;
+}
+
+.icon1 {
+    background: url(./image/big-icon.png) 0 -100px no-repeat;   
+}
+
+.icon2 {
+    background: url(./image/big-icon.png) -100px -100px no-repeat;    
+}
+
+.icon3 {
+    background: url(./image/big-icon.png) -200px -100px no-repeat;      
+}
+
+.icon4 {
+    background: url(./image/big-icon.png) -300px -100px no-repeat;
+}
+
+.serviceList a:hover .icon1 {
+    background: url(./image/big-icon.png) no-repeat;  
+}
+
+.serviceList a:hover .icon2 {
+    background: url(./image/big-icon.png) -100px 0 no-repeat;  
+}
+
+.serviceList a:hover .icon3 {
+    background: url(./image/big-icon.png) -200px 0 no-repeat;  
+}
+
+.serviceList a:hover .icon4 {
+    background: url(./image/big-icon.png) -300px 0 no-repeat;  
+}
+
+/*project*/
+.project {
+    width: 100%;
+    height: 430px;
+    background-color: #f5f5f5;
+}
+    
+.project-tab {
+   width: 1000px; 
+   height: 350px;
+   margin:0 auto; 
+}
+
+.project h1 {
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 10px; 
+}
+
+.projectMenu {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.projectMenu a {
+    text-decoration: none; 
+    color:#5c5a5a;
+}
+
+.projectMenu a:hover {
+    color: #0d0000;
+}
+
+.projectMenu span {
+    padding: 0 8px;
+}
+
+.projectScroll li {
+    width: 238px; 
+    height: 220px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.projectScroll p {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.project-tab .button {
+    width: 64px;
+    height: 21px; 
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.project-tab .button a {
+    width: 21px;
+    height: 21px;
+    float: left;
+}
+
+.project-tab .button .prev {
+    margin-right: 21px;
+    background: url(../css/image/button.png) no-repeat;
+}
+
+.project-tab .button .next {
+    background: url(../css/image/button.png) -21px 0 no-repeat;
+}
+
+/*news*/
+.news {
+    height: 350px;
+    background-color: #f5f5f5;
+}
+
+.news-tab {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.newsLeft {
+    float: left;
+    border-right: 1px solid #d9d3d3;
+    padding-right: 60px;
+    height: 260px;
+}
+
+.newsLeft h2 {
+    font-weight: normal;
+    font-size: 24px;
+    float: left;
+    line-height: 1;
+}
+
+.newTitle > a {
+    color: #032a1d;
+    font-size: 14px;
+    text-decoration: none;
+    float: left;  
+    padding-top: 8px;  
+    padding-left: 10px;
+}
+/*newTitle > a 只向下选择一级，选择newTitle后面的子元素a,不包括后面ul>li下的a       a标签加float变成块元素 ，margin-top才能起作用*/
+
+/*
+.newsLeft ul {
+    clear: both;
+}
+*/
+/*clear: both; ul不需要浮动*/
+
+
+.newsLeft li {
+    margin-top: 26px;
+}
+
+.newsLeft li a {
+    display: block;
+    line-height: 22px;
+    text-decoration: none;
+} 
+
+.newsLeft li a:hover {
+    color: #000;
+}
+
+.newsLeft li p {
+    color: #666;
+} 
+
+.newsright {
+    float: right;
+    padding-top: 50px;
+    height: 175px;
+}
+
+.newsright p {
+     padding-bottom: 14px;
+/*    line-height: 32px;*/
+}
+/* line-height包括上，下行间距，这里第一排不需要上半间距，所以用padding设置行间距*/
+
+.newsright h1 {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 2;
+    margin-bottom: 10px;
+}
+
+.newsright h1 b {
+    font-weight: normal;
+    color: #e61545;
+}
+
+.newsright .button {
+    display: block;
+    width: 80px;
+    height: 43px;
+    line-height: 43px;
+/*    background-color: #69ba07;   后面的图标不显示，把背景颜色放到图标后面就可以正常显示了*/
+    font-size: 16px;
+    color: #fdfdfd;
+    border-radius: 10px;
+    text-decoration: none;
+    padding-left: 50px;
+    cursor: pointer;
+    background: url(../css/image/small-icon.png) 18px 12px no-repeat;
+    background-color: #69ba07;
+}
+
+/*footer*/
+.footer {
+    height: 250px;
+    background-color: #211e1e;
+}
+
+.foot-tab {
+    width: 1000px;
+    height: 210px;
+    margin: 0 auto; 
+    color: #fdfeff;
+}
+
+.foot-meum {
+    width: 180px;
+    float: left;
+    padding: 25px 10px 0 10px;
+}
+
+.foot-meum > a {
+    display: block;
+    color: #a4acb1;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 30px;
+}
+    
+.foot-icon { 
+    display: block;
+    width: 105px;
+    height: 40px;
+    background: url(../css/image/footer-logo.png) no-repeat;
+    margin-top: 40px;
+}
+
+.foot-red {
+    color: #fa0808;
+}
+
+.foot-icon1 {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 7px 8px 0 0 ;
+    background: url(../css/image/footer-icon.png) no-repeat ;
+}
+
+.foot-icon2 {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 7px 8px 0 0 ;
+    background: url(../css/image/footer-icon.png) -16px 0 no-repeat ;
+}
+
+.foot-icon3 {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 7px 8px 0 0 ;
+    background: url(../css/image/footer-icon.png) -32px 0 no-repeat ;
+}
+
+.foot-icon4 {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 7px 8px 0 0 ;
+    background: url(../css/image/footer-icon.png) -48px 0 no-repeat ;
+}
+
+.foot-btm {
+    height: 45px;
+    font-size: 14px;
+    line-height: 45px;
+    background-color: #0a0909;
+    color: #ffffff;
+    text-align: center;
+}
+
+

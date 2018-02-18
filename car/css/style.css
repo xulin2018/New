@@ -1,0 +1,160 @@
+/*Style reset*/
+body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 { margin:0 ;padding:0; }
+body { background:#eee ; color:#000; font-size:.16rem; font-style:normal; font-family:"Microsoft Yahei";}
+em, b, i { font-style:normal;}
+img { border:none;}
+a { text-decoration:none; color:#333;}
+/*a:hover { text-decoration:underline; color:#f50;}*/
+li { list-style:none;}
+table { border-spacing:0; border-collapse:collapse;}
+.position_re{position: relative;}
+.position_ab{position: absolute;}
+.flt{float: left}
+.frt{float: right}
+.clear { clear: both;}
+.clearfix { *zoom: 1;}
+.clearfix:before, .clearfix:after { display: table; line-height: 0; content: "";}
+.clearfix:after { clear: both;}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?12ewem');
+  src:  url('../fonts/icomoon.eot?12ewem#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?12ewem') format('truetype'),
+    url('../fonts/icomoon.woff?12ewem') format('woff'),
+    url('../fonts/icomoon.svg?12ewem#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*this end*/
+
+/*header*/
+header{
+    width: 100%;
+    height: 1.36rem;
+    background-color: #fbcc02;
+    box-shadow: 0px .07rem .07rem #d9d9d9;
+
+}
+header a{
+    line-height: 1.36rem;
+    top: 0px;
+    font-size: .48rem;
+}
+header a.title{
+    text-align: left;
+    left: .24rem;
+}
+header h1{
+    text-align: center;
+    line-height: 1.36rem;
+    font-size: .53rem;
+
+}
+header a.home{
+    width: .43rem;
+    height: .39rem;
+    text-align: right;
+    right: .4rem;
+    font-family: 'icomoon';
+}
+/*header a.home:before {
+  content: "\e902"; 外部css引用图标，也可以在HTML直接引用，格式：&#xe902
+}*/
+/*list*/
+.list{
+    margin: 0 .24rem;
+}
+.list ul li{
+    height: 1.65rem;
+    background-color: #fff;
+    margin-top: .44rem;
+    border: 1px solid #dadada;
+    border-radius: .07rem;
+    font-size: .43rem;
+    color: #000;
+    line-height: .72rem;
+    padding: .17rem 0px 0px .24rem;
+}
+.list ul img{
+    width: .51rem;
+    height: .37rem;
+    vertical-align: middle; /*垂直对齐方式，middle:把此元素放置在父元素的中部*/
+}
+.list ul p{
+    padding-right: .13rem;
+    display: inline;
+    font-size: .32rem;
+    color: #a9a9a9;
+}
+.list p.load{
+    display: block;
+    /*margin: .29rem auto; 如果宽度是 100%，则有auto对齐没有效果*/
+    font-size: .37rem;
+    color: #989898;
+    text-align: center;/*设置块级元素内文本的水平对齐方式,也就是说只对块级元素有效*/
+    padding-top: .29rem;
+}
+.list p.load img{
+    width: .43rem;
+    height: .43rem;
+}
+/*top*/
+.top{
+    width: 2.85rem;
+    height: .8rem;
+    border: 1px solid #d6d6d6;
+    border-radius: .07rem;
+    margin: .44rem auto;
+    line-height: .8rem;
+    text-align: center;
+}
+.top img{
+    width: .37rem;
+    height: .37rem;
+}
+.top h1{
+    display: inline-block;
+    color: #676767;
+    font-size: .43rem;
+    font-weight: normal;
+}
+/*nav*/
+.nav p.item{
+    width: 100%;
+    height: 1.07rem;
+    background-color: #313131;
+    font-size: .51rem;
+    text-align: center;
+    line-height: 1.07rem;
+    margin-top: .72rem;
+}
+.nav p.item a{
+    color: #fff;
+}
+.nav p.item a,.nav p.type a{
+    padding-left: .36rem;
+}
+.nav p.item a:first-child,.nav p.type a:first-child{
+    padding-left: 0px;
+}
+.nav p.type{
+    margin-top: .37rem;
+    font-size: .51rem;
+    text-align: center;
+}
+.nav p.type span{
+    color: #3984c7;
+}
+.nav p.message{
+    margin-top: .37rem;
+    font-size: .51rem;
+    text-align: center;
+}
+.copyright{
+    margin: .35rem auto;
+    text-align: center;
+    font-size: .29rem;
+
+
+}
