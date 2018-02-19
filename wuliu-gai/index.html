@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <title>物流网站</title>
     <link rel="stylesheet" href="css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
  <div class="top"></div>
@@ -30,37 +28,48 @@
  <div class="focusbox clearfix">
      <div class="bd">
         <a href="">
-            <img src="image/banner1.jpg" alt="">
+            <img src="image/banner1.png" alt="">
             <h2>专心关注您的生活与工作，把繁杂的事情交给我们！</h2>
         </a>
 <!--       文字在图片上，调换图片与文字的顺序-->    
         <a href="">
-            <img src="image/banner1.jpg" alt="">
+            <img src="image/banner2.png" alt="">
             <h2>专心关注您的生活与工作，把繁杂的事情交给我们！</h2>
         </a>
         
         <a href="">
-            <img src="image/banner1.jpg" alt="">
+            <img src="image/banner3.png" alt="">
             <h2>专心关注您的生活与工作，把繁杂的事情交给我们！</h2>
         </a>
         
         <a href="">
-            <img src="image/banner1.jpg" alt="">
+            <img src="image/banner1.png" alt="">
             <h2>专心关注您的生活与工作，把繁杂的事情交给我们！</h2>
         </a>
         
         <a href="">
-            <img src="image/banner1.jpg" alt="">
+            <img src="image/banner2.png" alt="">
             <h2>专心关注您的生活与工作，把繁杂的事情交给我们！</h2>
         </a>
      </div>
-     
+<!-- 按照设计图要求,可以不加箭头.如果有箭头,根据设计图,用css图片精灵做 -->     
+<!--
      <div class="focusboxBtn clearfix">
              <a class="next" href="javascript:void(0)">&gt;</a>
              <a class="prev" href="javascript:void(0)">&lt;</a>
          </div>
+-->
      
      <ul class="hd">
+          <!-- 这里的on是当前切换元素的标识.假设现在切换到第三张图片,那第三个小点应该现设红色 -->
+<!--
+           <li class="on"></li>
+           <li class="on"></li>
+           <li class="on"></li>
+           <li class="on"></li>
+           <li class="on"></li>
+-->
+          <!-- 默认让第一个点显示红色 -->
            <li class="on"></li>
            <li></li>
            <li></li>
@@ -78,6 +87,7 @@
     </div>
      
      <div class="serviceList">
+            <!-- a标签要写上href,不然鼠标移动上去没有手的形状 -->
              <a href="">
                 <i class="icon1"></i>
                 <div class="ListWord">

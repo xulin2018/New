@@ -67,32 +67,15 @@ li { list-style:none;}
 
 /*focusbox*/
 .focusbox {
-    height: 410px; 
+    height: 490px; 
     position: relative;
     overflow: hidden;
 }
 
-
-
-/*
-@media(min-width:1200px;) {
-    .focusbox{width: 1000px;}
-}
-@media(min-width:1600px) {
-    .focusbox{width: 1440px;}
-}
-@media(min-width:1920px) {
-    .focusbox{width: 1920px; height: 491px;}
-}
-*/
-
-
-
-
-.focusbox a 
-/*    position: relative; */
+.focusbox a {
+    position: relative; 
     display: block;
-    height: 410px;
+    height: 490px;
 }
 
 /*
@@ -141,8 +124,8 @@ li { list-style:none;}
 }
 
 .focusbox .hd li {
-    width: 25px;
-    height: 25px;
+    width: 12px;
+    height: 12px;
     display: inline-block;
     background-color: #fff;
     border-radius: 50%;
@@ -154,9 +137,9 @@ li { list-style:none;}
 .focusbox .hd li:hover {
     background-color: #fd0606;
 }
-
+/* on样式应该是红色 */
 .focusbox .hd .on {
-    background-color: #db060e;
+    background-color: #fd0606;
 }
 
 .focusboxBtn a {
@@ -168,7 +151,6 @@ li { list-style:none;}
     width: 40px;
     background-color: #f80808;
     color:#eff7f7;
-/*    text-align: center;*/
 }
 
 .focusboxBtn .prev, .focusboxBtn .next{
