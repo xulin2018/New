@@ -1,0 +1,818 @@
+/* 属性重置 */
+body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 { margin:0 ;padding:0; }
+body { background:#fff ; color:#000; font-size:12px; font-style:normal; font-family:"Microsoft Yahei"; }
+p{line-height:1.6;}
+h1,h2,h3{line-height:2;}
+em, b, i { font-style:normal;}
+img { border:none;}
+a { text-decoration:none; color:#000;}
+a:hover { text-decoration:underline; color:#cc0000;}
+li { list-style:none;}
+
+
+/*清除浮动*/
+    .clearfix { *zoom: 1;} 
+    .clearfix:before, .clearfix:after { display: table; line-height: 0; content: "";}
+    .clearfix:after { clear: both;}
+
+
+/*
+.more {
+    float:right;
+    color: #535ee6;
+    font-size: 14px;
+    margin-right: 5px;
+    text-decoration: none;
+    }
+*/
+
+/*
+.title-p {
+    float:left;
+    font-size: 14px;
+    padding: 10px 0 0 10px;
+    font-style: italic;
+    color:#bfbcb7;
+}
+*/
+
+
+/*the end*/
+
+
+/*top*/
+.top {
+    height: 35px;
+    background-color: #0e0f0e;
+}
+
+.content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.top-left {
+     float: left;
+     width: 250px;
+     height: 35px;
+}
+
+.left-box1 {
+     float: left;
+     width: 120px;
+     height: 35px;
+     background-color: #fafafa;
+     transform: skewX(-20deg);
+}
+
+.left-box2 {
+    float: left;
+     width: 130px;
+     height: 35px;
+     margin-left: -15px;
+     background-color: #fafafa;
+     transform: skewX(-340deg);
+}
+
+.top-right {
+    position: relative;
+    float: right;
+    width: 380px;
+    height: 35px;
+    color: #f3f7f8;
+}
+
+.top-right a {
+    font-size: 14px;
+    line-height: 35px;
+    margin: 0 15px 0 10px;
+    color: #fcfdfd;
+    text-decoration: none;
+}
+
+.top-right i {
+    display: inline-block;
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background: url("image/search.png") no-repeat;
+    background-size: 16px 16px;
+    margin: 10px 0 0 -22px;
+}
+
+.top-right input {
+    height: 20px;
+    font-size:14px;
+    padding-left: 8px;
+    border-radius: 8px;
+    border: none;
+}
+
+
+/*header*/
+.header {
+    height: 60px;
+    background: url("image/header-bg.png") repeat-x;
+}
+
+.header .logo {
+    position: absolute;
+    width: 250px;
+    margin-top: -15px;
+    z-index: 3;
+    text-decoration: none; 
+}
+
+.logo i {
+    display: inline-block;
+    float: left;
+    width: 65px;
+    height: 65px;
+    background: url("image/logo.png") no-repeat;
+    background-size: 65px 65px;
+    margin: 0 8px 0 8px;
+}
+
+.logo p {
+    font-size: 12px;
+    color: #898e8e;
+    letter-spacing: 1px;
+}
+
+.header .nav {
+    float: left;
+    margin-left: 244px;
+    width: 730px;
+    font-size: 14px;
+}
+
+.nav a {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 15px 0 15px;
+    border-right: 1px solid #cbc1c1;
+    text-decoration: none;  
+}
+
+.nav a:hover {
+    color: #415ebc;
+} 
+
+.nav .nav-first {
+    color: #415ebc;
+    border-left: 1px solid #cbc1c1;
+}
+
+
+/*focusbox*/
+.focusbox {
+    height: 380px; 
+}
+
+
+/*center*/
+.center {
+    height: 930px;
+    margin-top: 25px;
+}
+
+
+/*租车展示*/
+.center-show {
+    width: 1000px;
+    height: 255px;
+}
+
+.center-more {
+    float: left;
+    width: 698px;
+    height: 250px;
+    background-color: #faf9f9;
+    border: 1px solid #ded4d4;
+    border-radius: 5px;
+}
+
+.center-title {
+    height: 40px;
+    width: 650px;
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+    margin-left: 25px;
+}
+
+.center-title h2 {
+    float: left;
+    color: #555db4;
+}
+
+.center-title p {
+    float: left;
+    font-size: 14px;
+    padding: 10px 0 0 10px;
+    font-style: italic;
+    color: #bfbcb7;
+}
+
+.center-title a {
+    float: right;
+    color: #555db4;
+    font-size: 14px;
+    margin-right: 5px;
+    text-decoration: none
+}
+
+.show-list {
+    float: left;
+    height: 200px;
+    width: 680px;
+}
+
+.show-list a {
+    float: left;
+    height: 110px;
+    width: 140px;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    color: #141111;
+}
+
+.show-list a :hover {
+    color:#0d45dd;
+}
+
+.instruction {
+    color: #908e98;
+}
+
+.price {
+     color: #ce385a;
+}
+
+.show-images1 {
+    display: inline-block;
+    width: 150px;
+    height: 120px;
+    background: url("../image/center-show.jpg") no-repeat;
+}
+
+.show-images2 {
+    display: inline-block;
+     width: 150px;
+     height: 120px;
+    background: url("../image/center-show.jpg") -180px 0 no-repeat;
+}
+
+.show-images3 {
+    display: inline-block;
+     width: 150px;
+     height: 120px;
+    background: url("../image/center-show.jpg") -360px 0 no-repeat;
+}
+
+.show-images4 {
+    display: inline-block;
+     width: 150px;
+     height: 120px;
+    background: url("../image/center-show.jpg") -540px 0 no-repeat;
+}
+
+.center-list {
+    float: left;
+    width: 260px;
+    height: 250px;
+    padding-left: 40px; 
+}
+
+.center-list h2 {
+    display: inline-block;
+    height: 35px;
+    width: 250px;
+    background-color: #003e65;
+    color: #f4f9fd;
+    border-radius: 5px;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 10px; 
+}
+
+.center-list ul a {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    width: 250px;
+    color: #212427;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid #d8cdcd;
+    background: url(../css/image/show-bg.png) repeat-x;
+    text-decoration: none;  
+}
+
+.center-list ul i {
+    display: inline-block;
+    width: 7px;
+    height: 12px;
+    background: url(../css/image/show-icon.png) no-repeat;
+    background-size: 13px 12px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.center-list .first-li {
+    background: #003e65;
+    color: #f9fcff;
+}
+
+.center-list .first-li i {
+    display: inline-block;
+    width: 7px;
+    height: 12px;
+    background: url(../css/image/show-icon.png) -6px 0 no-repeat;
+}
+
+
+
+/*租车流程*/
+.center-process {
+    width: 1000px;
+    height: 255px;
+    margin-top: 10px;
+}
+
+.process-list {
+    float: left;
+    width: 300px;
+    height: 255px; 
+}
+
+.process-list li {
+     float: left;
+     width: 280px;
+     height: 80px;
+     margin-bottom: 5px;
+     border: 1px solid #d0cdcd;
+    border-radius: 3px;
+    background: url(../css/image/process-bg.png) repeat-x;
+}
+
+.process-list h2 {
+    float: left;
+    font-size: 16px;
+    line-height: 60px;
+    color: #555db4;
+    font-style: italic;
+    margin: 10px 15px 0 20px;
+}
+
+.process-list p {
+    float: left;
+    color: #788e8e;
+    font-size: 14px;
+    height: 60px;
+    line-height: 60px;
+    font-style: italic;
+    margin-top: 10px;   
+}
+
+.process-about {
+    float: left;
+    width: 300px;
+    height: 255px;
+    background-color: #faf9f9;
+    border: 1px solid #cec9c9;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.about-title {
+    height: 40px;
+    width: 260px;
+     margin-left: 20px;
+    border-bottom: 1px solid #c4bfbf;
+}
+
+.process-about h2 {
+    float: left;
+    color: #555db4;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.about-title .about-us {
+    float: left;
+    color: #8c8c91;
+    font-size: 14px;
+    margin: 10px;
+    font-style: italic;
+}
+
+.about-title .more {
+    float: right;
+    color: #555db4;
+    margin: 10px;
+    font-size: 14px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.about-text {
+    width: 258px;
+    height: 200px;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 15px 15px 15px 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.process-new {
+    float: left;
+    width: 370px;
+    height: 255px;
+    background-color: #faf9f9;
+    border: 1px solid #cec9c9;
+    border-radius: 5px;
+}
+
+.new-title {
+    height: 40px;
+    width: 330px;
+    margin-left: 20px;
+    border-bottom: 1px solid #c4bfbf;
+}
+
+.new-title h2 {
+    float: left;
+    color: #555db4;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.new-title .news {
+    float: left;
+    color: #8c8c91;
+    font-size: 14px;
+    margin: 10px;
+    font-style: italic;
+}
+
+.new-title .more {
+    float: right;
+    color: #555db4;
+    margin: 10px;
+    font-size: 14px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.new-img {
+    float: left;
+    height: 100px;
+    width: 330px;
+    margin: 15px 15px 0 25px;
+    border-bottom: 1px dashed #b5b3b3;
+}
+
+.new-img-left {
+    float: left;
+    height: 82px;
+    width: 110px;
+}
+
+.new-img-right {
+    float: right;
+    height: 100px;
+    width: 205px;
+}
+
+.new-img h3 {
+    height: 30px;
+    line-height: 35px;
+}
+
+.new-img p {
+    float: right;
+    height: 20px;
+    line-height: 25px;
+    text-indent: 2em;  
+}
+
+.new-list {
+    float: left;
+    height: 80px;
+    width: 330px;
+    margin: 15px 15px 0 25px;
+}
+
+.new-list li {
+    float: left;
+    margin: 0 0 5px 15px;
+    font-size: 12px;
+    line-height: 20px;
+    list-style: disc;
+}
+
+.new-list p {
+    float: left;
+    font-size: 12px;
+}
+
+.list-time {
+    margin-left: 35px;
+}
+
+
+/*客户案例*/
+.center-case {
+    width: 1000px;
+    height: 230px;
+    margin-top: 10px;
+}
+
+.case-list {
+    float: left;
+    width: 740px;
+    height: 230px;
+    background-color: #faf9f9;
+    border: 1px solid #cec9c9;
+    border-radius: 5px;
+}
+
+.case-title {
+    height: 40px;
+    width: 700px;
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+    margin-left: 25px;
+}
+
+.case-title h2 {
+    float: left;
+    color: #555db4;
+}
+
+.case-title p {
+    float: left;
+    font-size: 14px;
+    padding: 10px 0 0 10px;
+    font-style: italic;
+    color: #bfbcb7;
+}
+
+.case-img {
+    float: left;
+    height: 190px;
+    width: 700px;
+    margin-left: 20px;
+}
+
+.case-img a{
+    float: left;
+    height: 160px;
+    width: 150px;
+    padding: 15px 13px 10px 12px;
+    text-decoration: none;
+}
+
+.case-img a :hover {
+    color: #0d45dd;
+}
+
+.case-img h3{
+    color: #353538;
+}
+
+.case-img p {
+     color: #8d8a8a;
+}
+
+.case-contact {
+    float: left;
+    width: 230px;
+    height: 230px;
+    background-color: #faf9f9;
+    margin-left: 20px;
+    border: 1px solid #cec9c9;
+    border-radius: 5px;
+}
+
+.case-contact-title {
+    height: 40px;
+    width: 210px;
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+    margin-left: 10px;
+}
+
+.case-contact-title h2 {
+    float: left;
+    color: #555db4;
+}
+
+.case-contact-title p {
+    float: left;
+    font-size: 14px;
+    padding: 10px 0 0 10px;
+    font-style: italic;
+    color: #bfbcb7;
+}
+
+.case-contact-text {
+    font-size: 12px;
+    padding: 20px 0 0 15px;
+}
+
+.case-contact-text p {
+    line-height: 25px;
+}
+
+
+
+/*底部租车展示*/
+.center-btm {
+    float: left;
+    width: 995px;
+    height: 140px;
+    margin-top: 10px;
+    background-color: #faf9f9;
+    border: 1px solid #cec9c9;
+    border-radius: 5px;
+}
+
+
+.center-btm-title {
+    height: 40px;
+    width: 950px;
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+    margin-left: 20px;
+}
+
+.center-btm-title h2 {
+    float: left;
+    color: #555db4;
+}
+
+.center-btm-title p {
+    float: left;
+    font-size: 14px;
+    padding: 10px 0 0 10px;
+    font-style: italic;
+    color: #bfbcb7;
+}
+
+.center-btm-process {
+    float: left;
+    height: 50px;
+    width: 900px;
+    margin: 20px 0 0 20px;
+}
+
+.center-btm-process .btm-list {
+    position: relative;
+    float: left;
+    height: 50px;
+    width: 180px;
+    background-color: #004070;
+}
+
+.btm-list a {
+    position: absolute;
+    font-size: 16px;
+    line-height: 20px;
+    color: #f9fafc;
+    margin: 12px 0 0 60px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.btm-list i {
+    display: inline-block;
+    float: right;
+    height: 50px;
+    width: 38px;
+    background: url("../css/image/btm.png") no-repeat;
+    background-size: 38px 50px;
+}
+
+ .center-btm .center-btm-end {
+    display: inline-block;
+    float: left;
+    height: 50px;
+    width: 38px;
+    background: url(../css/image/btm2.png) no-repeat;
+    background-size: 38px 50px;
+    margin-top: 20px;
+}
+
+
+
+/* 右边联系信息*/
+
+/*
+
+.right-contact {
+    float:right;
+    height: 363px;
+    width: 110px;
+    
+}
+
+.right-contact a {
+    display: inline-block;
+}
+*/
+
+
+
+
+/*footer*/
+.footer {
+    height: 220px;
+    background-color: #003e65;
+    margin-top: 10px;
+}
+
+.footer .content {
+    width: 1000px;
+    height: 220px;
+    margin: 0 auto;
+    background-color: #003e65;
+}
+
+.foot-title {
+   float: left;
+    height: 40px;
+    width: 900px;
+    line-height: 40px;
+    border-bottom: 1px solid #9b9898;
+    margin-left: 40px;
+}
+
+.foot-title h2 {
+    float: left;
+    color: #f2f3fd;
+}
+
+.foot-title p {
+    float: left;
+    font-size: 14px;
+    padding: 10px 0 0 10px;
+    font-style: italic;
+    color: #f2f3fd;
+}
+
+.foot-list {
+    float: left;
+    padding: 10px 0 0 20px;
+}
+
+.foot-list1 {
+    height: 40px;
+    width: 950px;
+}
+
+.foot-list1 li {
+    float: left;
+    color: #8da4ba;
+}
+
+.foot-list1 a {
+    display: inline-block;
+    color: #8da4ba;
+    font-size: 14px;
+    line-height: 40px;
+    margin: 0 20px 0 20px ;
+    text-decoration: none;
+}
+
+.foot-list2 {
+    float: left;
+    height: 40px;
+    width: 950px;
+    line-height: 40px;
+    color: #8da4ba;
+}
+
+.foot-list2 li {
+    float: left;
+    color:#8da4ba;
+}
+
+.foot-list2 a {
+    display: inline-block;
+    color: #8da4ba;
+    font-size: 14px;
+    line-height: 40px;
+    margin: 0 10px 0 20px ;
+    text-decoration: none;
+}
+
+.foot-list p {
+    color: #8da4ba;
+    font-size: 14px;
+    line-height: 40px;
+    margin-left: 20px;
+}
