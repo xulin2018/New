@@ -445,11 +445,19 @@ li { list-style:none;}
 .about-text {
     width: 258px;
     height: 200px;
+    margin: 15px 15px 15px 22px;
+}
+
+.about-text p {
     font-size: 12px;
     line-height: 20px;
     margin: 15px 15px 15px 22px;
-    overflow: hidden;
+    overflow : hidden;
     text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    word-break:break-all;
 }
 
 .process-new {
@@ -534,7 +542,7 @@ li { list-style:none;}
 
 .new-list li {
     float: left;
-    height: 20px;
+    height: 30px;
     margin: 0 0 5px 5px;
     font-size: 12px;
     list-style: disc;
@@ -728,42 +736,56 @@ li { list-style:none;}
     text-decoration: none;
 }
 
-.btm-list i {
-    display: inline-block;
+/*三角形*/
+.btm-list .btm-list-i {
     float: right;
     height: 50px;
     width: 38px;
-    background: url("../css/image/btm.png") no-repeat;
-    background-size: 38px 50px;
 }
 
- .center-btm .center-btm-end {
-    display: inline-block;
-    float: left;
-    height: 50px;
-    width: 38px;
-    background: url(../css/image/btm2.png) no-repeat;
-    background-size: 38px 50px;
-    margin-top: 20px;
+ .btm-list .btm-list-i-1 {
+     position: absolute;
+     float: right;
+     height: 0;
+     width: 0;
+     border: 25px solid #004070; 
+     border-color:transparent transparent transparent #004070; 
+     margin: 0 0 0 -1px;
+     z-index: 3;
+ }
+
+.btm-list .btm-list-i-2 {
+     height: 0;
+     width: 0;
+     border: 35px solid #fdfdfd; 
+     border-color: transparent transparent transparent #fdfdfd; 
+    margin-top: -10px;
+ }
+
+.btm-list .btm-list-i-last {
+     height: 0;
+     width: 0;
+     border: 25px solid #004070; 
+     border-color: transparent transparent transparent #004070; 
+     margin-left: 38px;
 }
+    
 
 
 
 /* 右边联系信息*/
 
-/*
 
 .right-contact {
+/*    position: fixed;*/
     float:right;
-    height: 363px;
-    width: 110px;
-    
+    width: 100px; 
 }
 
 .right-contact a {
     display: inline-block;
+    height: 363px;
 }
-*/
 
 
 
@@ -784,7 +806,7 @@ li { list-style:none;}
 
 .foot-title {
     display: inline-block;
-   float: left;
+    float: left;
     height: 40px;
     width: 900px;
     line-height: 40px;
