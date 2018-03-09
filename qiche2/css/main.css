@@ -536,13 +536,13 @@ li { list-style:none;}
     float: left;
     height: 85px;
     width: 330px;
-    margin: 10px 15px 10px 25px;
+    margin: 10px 15px 5px 25px;
     overflow: hidden;
 }
 
 .new-list li {
     float: left;
-    height: 30px;
+    height: 20px;
     margin: 0 0 5px 5px;
     font-size: 12px;
     list-style: disc;
@@ -550,7 +550,7 @@ li { list-style:none;}
 
 .new-list li a {
     display:inline-block;
-    line-height: 20px;
+    line-height: 10px;
     text-decoration: none;
 }  
 
@@ -771,20 +771,70 @@ li { list-style:none;}
 }
     
 
-
-
 /* 右边联系信息*/
-
-
 .right-contact {
-/*    position: fixed;*/
-    float:right;
-    width: 100px; 
+    position: fixed;
+    width: 110px; 
+    height: 363px;
+    right: 20px;
+    top: 200px;
+    border-radius: 50px;
+    border: 1px solid #7c7c7c;
+    background-color: #f5f8fc;
+    text-align: center;
 }
 
 .right-contact a {
     display: inline-block;
-    height: 363px;
+    text-decoration: none;
+}
+
+.telephone {
+    width: 110px;
+    height:100px;
+}
+
+.telephone-icon {
+    display: block;
+    width: 52px;
+    height:75px;
+    background: url("image/right-icon.png") no-repeat;
+    margin: 10px 0 0 30px;
+}
+
+.right-contact .telephone p {
+    font-size: 14px;
+    color: #003e65;
+}
+
+.right-contact .qq-icon {
+    width: 105px;
+    height:75px;
+    background: url("image/right-icon.png") -52px 0 no-repeat;
+}
+
+.right-contact .scan {
+    width: 110px;
+    height:120px;
+}
+
+.right-contact .scan p{
+    font-size: 14px;
+    color: #151617; 
+}
+
+.right-contact .scan-icon {
+    display: inline-block;
+    width: 74px;
+    height:75px;
+    background: url("image/right-icon.png") -154px 0 no-repeat;
+}
+
+.right-contact .top-icon {
+     display: inline-block;
+     width: 30px;
+     height:75px;
+     background: url("image/right-icon.png") -228px 0 no-repeat;
 }
 
 
