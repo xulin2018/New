@@ -16,7 +16,7 @@ $(".focusbox").slide ({
 
 
 $(".project").slide ({
-    mainCell: ".projectScroll",          
+    mainCell: "ul",          
     deleteTime: 1000,
     interTime: 50,
     effect: "leftLoop",

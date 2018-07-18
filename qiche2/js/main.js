@@ -16,7 +16,7 @@ $(".focusbox").slide ({
 
 
 //租车流程 新闻动态
-$(".process-new .new-list").slide ({
+$(".process-new").slide ({
     mainCell: "ul", 
     autoPlay: true,
     effect: "topMarquee",

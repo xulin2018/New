@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery.js"></script>  <!-- jquery,操作页面上html元素 -->
+    <script src="js/velocity.js"></script> <!-- 动画库 -->
+    <script src="js/velocity.ui.js"></script><!-- 动画库 -->
+    <script src="js/shake.js"></script><!-- 摇一摇组件 -->
+    <title>光棍节跟谁过</title>
+</head>
+<body>
+    <div class="loading">
+        <div class="loading-wrap">
+            <canvas width="100" height="100" id="canvas"></canvas>
+            <div class="loading-text">0%</div>
+        </div>
+    </div>
+    <div class="home">
+        <div class="title"></div>
+        <div class="subtitle"></div>
+        <div class="entitle"></div>
+        <div class="shake">
+            
+        </div>
+    </div>
+
+
+   
+
+   
+    <script type="text/javascript">
+        ;$(function(){
+            // $('.title').velocity('callout.flash');
+            var canvas = document.getElementById('canvas');
+            var ctx = canvas.getContext('2d');
+
+
+            function DrowProcess(){
+                // 画圆
+                ctx.beginPath();
+                ctx.moveTo(50,50);
+                ctx.arc(50,50,50,0,2*Math.PI,false);
+                ctx.closePath();
+                ctx.fillStyle='#fff';
+                ctx.fill();
+                DrawFan(0);
+            }
+            // 画扇形
+            function DrawFan(percent){
+                // console.log(this.percent)
+                ctx.beginPath();
+                ctx.moveTo(50,50);
+                ctx.arc(50,50,50,0+1.5*Math.PI,1.5*Math.PI+(2*Math.PI)*percent/100,false);
+                ctx.closePath();
+                ctx.fillStyle='#ffa9ad';
+                ctx.fill();
+                
+                $('.loading-text').text(percent+'%');
+            }
+
+            DrowProcess();
+            //var pics = ['css/entitle.png','css/hand.png','css/hand_finger.png','css/home_avatar0.png','css/home_avatar1.png','css/home_avatar2.png','css/home_avatar3.png','css/home_avatar4.png','css/home_avatar5.png','css/home_avatar6.png','css/home_shake_text.png','css/loading.png','css/result_answer.png','css/result_answer0.png','css/result_answer1.png','css/result_answer2.png','css/result_answer3.png','css/result_answer4.png','css/result_answer6.png','css/result_avatar.png','css/result_avatar_bg.png','css/result_avatar_bg_1.png','css/result_avatar_bg_2.png','css/result_avatar0.png','css/result_avatar1.png','css/result_avatar2.png','css/result_avatar3.png','css/result_avatar4.png','css/result_avatar6.png','css/result_btn.png','css/result_text.png','css/result_text0.png','css/result_text1.png','css/result_text2.png','css/result_text3.png','css/result_text4.png','css/result_text6.png','css/result_title.png','css/shake_tips.png','css/share.jpg','css/share.png','css/share0.jpg','css/share1.jpg','css/share2.jpg','css/share3.jpg','css/share4.jpg','css/share5.jpg','css/share6.jpg','css/subtitle.png','css/title.png','css/yue.png'];
+            var pics = ['http://mat1.gtimg.com/yslp/guanggunjie/css/share.png','http://mat1.gtimg.com/yslp/guanggunjie/css/entitle.png','http://mat1.gtimg.com/yslp/guanggunjie/css/hand.png','http://mat1.gtimg.com/yslp/guanggunjie/css/hand_finger.png','http://mat1.gtimg.com/yslp/guanggunjie/css/home_avatar0.png','http://mat1.gtimg.com/yslp/guanggunjie/css/home_avatar1.png','http://mat1.gtimg.com/yslp/guanggunjie/css/home_avatar2.png','http://mat1.gtimg.com/yslp/guanggunjie/css/home_avatar4.png','http://mat1.gtimg.com/yslp/guanggunjie/css/home_avatar5.png','http://mat1.gtimg.com/yslp/guanggunjie/css/home_avatar6.png','http://mat1.gtimg.com/yslp/guanggunjie/css/home_shake_text.png','http://mat1.gtimg.com/yslp/guanggunjie/css/loading.png','http://mat1.gtimg.com/yslp/guanggunjie/css/result_answer.png','http://mat1.gtimg.com/yslp/guanggunjie/css/result_answer0.png','http://mat1.gtimg.com/yslp/guanggunjie/css/result_answer1.png','http://mat1.gtimg.com/yslp/guanggunjie/css/result_answer2.png','http://mat1.gtimg.com/yslp/guanggunjie/css/result_answer3.png','http://mat1.gtimg.com/yslp/guanggunjie/css/result_answer4.png','http://mat1.gtimg.com/yslp/guanggunjie/css/result_answer6.png','http://mat1.gtimg.com/yslp/guanggunjie/css/result_avatar.png','http://mat1.gtimg.com/yslp/guanggunjie/css/result_avatar_bg.png','http://mat1.gtimg.com/yslp/guanggunjie/css/result_avatar_bg_1.png','http://mat1.gtimg.com/yslp/guanggunjie/css/result_avatar_bg_2.png','http://mat1.gtimg.com/yslp/guanggunjie/css/result_avatar0.png','http://mat1.gtimg.com/yslp/guanggunjie/css/result_avatar1.png','http://mat1.gtimg.com/yslp/guanggunjie/css/result_avatar2.png','http://mat1.gtimg.com/yslp/guanggunjie/css/result_avatar3.png','http://mat1.gtimg.com/yslp/guanggunjie/css/result_avatar4.png','http://mat1.gtimg.com/yslp/guanggunjie/css/result_avatar6.png','http://mat1.gtimg.com/yslp/guanggunjie/css/result_btn.png','http://mat1.gtimg.com/yslp/guanggunjie/css/result_title.png','http://mat1.gtimg.com/yslp/guanggunjie/css/shake_tips.png','http://mat1.gtimg.com/yslp/guanggunjie/css/share.jpg','http://mat1.gtimg.com/yslp/guanggunjie/css/share.png','http://mat1.gtimg.com/yslp/guanggunjie/css/subtitle.png','http://mat1.gtimg.com/yslp/guanggunjie/css/title.png','http://mat1.gtimg.com/yslp/guanggunjie/css/yue.png','http://mat1.gtimg.com/yslp/guanggunjie/css/share0.jpg','http://mat1.gtimg.com/yslp/guanggunjie/css/share1.jpg','http://mat1.gtimg.com/yslp/guanggunjie/css/share2.jpg','http://mat1.gtimg.com/yslp/guanggunjie/css/share3.jpg','http://mat1.gtimg.com/yslp/guanggunjie/css/share4.jpg','http://mat1.gtimg.com/yslp/guanggunjie/css/share5.jpg','http://mat1.gtimg.com/yslp/guanggunjie/css/share6.jpg']
+            function Loading(pics,complete){
+                var index = 0;
+                var len = pics.length;
+                for (var i = 0;i<len;i++){
+                    var image = new Image();
+                    image.onload = function(){
+                        index ++;
+                        if(index == len){
+                            complete();
+                        }
+                        DrawFan(Math.floor((index / len)*100));
+                    }
+                    image.src = pics[i];
+                }
+            }
+            Loading(pics,function(){
+                $('.loading').hide();
+                $('.home').show();
+            });
+        });
+    </script>
+</body>
+</html>
